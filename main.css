@@ -1,0 +1,112 @@
+body,
+html {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Roboto Mono", monospace;
+}
+
+:root {
+	--bg-color: #616161;
+	--light-shadow: #73737360;
+	--dark-shadow: #4f4f4f;
+	--text-light: rgba(255, 255, 255, 0.6);
+}
+
+body {
+	background-color: #616161;
+	height: 100vh;
+	padding: 3rem 6rem;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.logo {
+	text-align: center;
+}
+
+.page-name {
+	opacity: 0.6;
+	font-size: 30px;
+	text-align: center;
+	font-weight: bold;
+	color: white;
+	font-family: "Lobster", cursive;
+}
+
+main {
+	margin: 4rem 0 6rem 0;
+}
+.coming-soon {
+	text-align: center;
+	font-size: 80px;
+	font-weight: bold;
+	color: var(--bg-color);
+	text-shadow: 2px 2px 2px var(--light-shadow), -2px -2px 2px var(--dark-shadow);
+	margin-bottom: 1rem;
+	font-family: "Ramabhadra", sans-serif;
+	letter-spacing: 8px;
+	line-height: 90px;
+	white-space: pre;
+}
+
+.counting-container {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 3rem;
+}
+
+.counting-item {
+	flex-basis: 140px;
+	flex-grow: 0;
+	flex-shrink: 0;
+	height: 140px;
+	background-color: var(--bg-color);
+	border-radius: 10px;
+	box-shadow: inset -4px -4px 4px var(--light-shadow),
+		inset 4px 4px 4px var(--dark-shadow);
+	margin: 0px 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.number {
+	font-size: 50px;
+	font-weight: bold;
+	color: var(--text-light);
+	margin-bottom: 6px;
+}
+
+.title {
+	font-size: 14px;
+	font-weight: bold;
+	color: #ac7b60;
+	letter-spacing: 2px;
+}
+
+.social-container {
+	display: flex;
+	justify-content: center;
+}
+.social-item {
+	flex-shrink: 0;
+	flex-grow: 0;
+	width: 30px;
+	height: 30px;
+	border-radius: 8px;
+	background-color: var(--bg-color);
+	background: linear-gradient(145deg, #686868, #575757);
+	box-shadow: 2px 2px 4px #4f4f4f, -2px -2px 4px #737373;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0px 10px;
+	transition: all 0.5s;
+}
+
+.social-item:hover {
+	box-shadow: inset 2px 2px 4px #4f4f4f, inset -2px -2px 4px #737373;
+}
